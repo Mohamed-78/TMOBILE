@@ -1,0 +1,388 @@
+<ion-header class="ion-no-border">
+  <ion-item lines="none">
+    <ion-avatar slot="end">
+      <img src="https://yt3.ggpht.com/a-/AOh14GjThP6xpdHXuwV9tVt7wMvBIytCfvZm4N_BkN1MrA=s288-c-k-c0xffffffff-no-rj-mo">
+    </ion-avatar>
+    <ion-label>
+      <h2>Restaurant Menu</h2>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="ion-padding wrapper">
+
+    <ion-searchbar></ion-searchbar>
+
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-align-items-baseline">
+        <ion-col size="6">
+          <h4 class="title">
+            Plats poupulaire
+          </h4>
+        </ion-col>
+        <ion-col size="6">
+          <h4 class="more ion-text-end">
+            voir plus
+          </h4>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-item>
+    <ion-label>Mode sombre</ion-label>
+    <ion-toggle (ionChange)='toggleTheme($event)' slot="end"></ion-toggle>
+  </ion-item>
+
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12">
+
+        <ion-slides [options]="options">
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Pizza king</ion-card-title>
+                <div  class="subtitle">
+                  <ion-card-subtitle>Pour vos deserts</ion-card-subtitle>
+                  <ion-card-subtitle color="danger">A partir de 3000 F</ion-card-subtitle>
+                </div>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/793759/pexels-photo-793759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Fruit de salade</ion-card-title>
+                <div  class="subtitle">
+                  <ion-card-subtitle>Leger et digeste</ion-card-subtitle>
+                  <ion-card-subtitle color="danger">A partir de 3000 F</ion-card-subtitle>
+                </div>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Gâteau au raisin</ion-card-title>
+                <div  class="subtitle">
+                  <ion-card-subtitle>Un vrai delice</ion-card-subtitle>
+                  <ion-card-subtitle color="danger">A partir de 3000 F</ion-card-subtitle>
+                </div>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Riz au poulet</ion-card-title>
+                <div  class="subtitle">
+                  <ion-card-subtitle>Un vrai plaisir</ion-card-subtitle>
+                  <ion-card-subtitle color="danger">A partir de 3000 F</ion-card-subtitle>
+                </div>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Burger</ion-card-title>
+                <div  class="subtitle">
+                  <ion-card-subtitle>Faîtes vous plaisir</ion-card-subtitle>
+                  <ion-card-subtitle color="danger">A partir de 3000 F</ion-card-subtitle>
+                </div>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+                
+                <ion-card-title class="title">Agneau</ion-card-title>
+                <div  class="subtitle">
+                  <ion-card-subtitle>Regalez-vous</ion-card-subtitle>
+                  <ion-card-subtitle color="danger">A partir de 3000 F</ion-card-subtitle>
+                </div>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+        </ion-slides>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <div class="ion-padding-horizontal wrapper">
+
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-align-items-baseline">
+        <ion-col size="6">
+          <h4 class="title">
+            Explorez nos catégories
+          </h4>
+        </ion-col>
+        <ion-col size="6">
+          <h4 class="more ion-text-end">
+            Voir plus
+          </h4>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+  
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12">
+        <ion-slides [options]="categories">
+
+          <ion-slide>
+            <ion-card class="category" color="danger">
+              <ion-card-header class="ion-text-center">
+                <ion-icon src="assets/dish.svg"></ion-icon>
+                <ion-card-title>Food</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="category" color="primary">
+              <ion-card-header class="ion-text-center">
+                <ion-icon src="assets/cocktail.svg"></ion-icon>
+                <ion-card-title>Drink</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="category" color="warning">
+              <ion-card-header class="ion-text-center">
+                <ion-icon src="assets/burger.svg"></ion-icon>
+                <ion-card-title>Burger</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="category" color="success">
+              <ion-card-header class="ion-text-center">
+                <ion-icon src="assets/pizza.svg"></ion-icon>
+                <ion-card-title>Pizza</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="category" color="tertiary">
+              <ion-card-header class="ion-text-center">
+                <ion-icon src="assets/taco.svg"></ion-icon>
+                <ion-card-title>Mexican</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="category" color="danger">
+              <ion-card-header class="ion-text-center">
+                <ion-icon src="assets/cookies.svg"></ion-icon>
+                <ion-card-title>Dessert</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="category" color="secondary">
+              <ion-card-header class="ion-text-center">
+                <ion-icon src="assets/noodle.svg"></ion-icon>
+                <ion-card-title>Noodle</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="ion-padding-horizontal wrapper">
+
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-align-items-baseline">
+        <ion-col size="6">
+          <h4 class="title">
+            Recommandation
+          </h4>
+        </ion-col>
+        <ion-col size="6">
+          <h4 class="more ion-text-end">
+            Voir plus
+          </h4>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </div>
+
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12">
+        <ion-slides [options]="options">
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+
+                <ion-card-title class="title">Jus</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/616840/pexels-photo-616840.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+
+                <ion-card-title class="title">Cocktail</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="card">
+              <ion-card-content class="ion-text-left">
+
+                <div class="img-wrapper">
+                  <ion-img src="https://images.pexels.com/photos/1437629/pexels-photo-1437629.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></ion-img>
+                </div>
+
+                <ion-card-title class="title">Jus de goyave</ion-card-title>
+                <ion-card-subtitle>Ice restaurant</ion-card-subtitle>
+                <ion-card-subtitle>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </ion-card-subtitle>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

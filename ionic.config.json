@@ -1,0 +1,7 @@
+{
+  "name": "UIX_5",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
